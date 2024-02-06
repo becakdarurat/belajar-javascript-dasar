@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+
+        let arrayKosong = [];
+        arrayKosong.push("Sofyan Tanjung");
+        arrayKosong.push("Sibolga Kota ikan");
+        arrayKosong.push("Budi","Eko","Joko");
+        delete(arrayKosong[2]);
+        arrayKosong[1] = "Ikan kakap";
+        arrayKosong[2] = "Bendera";
+
+        // array dalam array
+        arrayKosong.push(["ini array","array lagi"]);
+
+        console.table(arrayKosong);
+        console.info(arrayKosong.length);
+
+        let arrayNama = ["Eko","Kurniawan","Khannedy"];
+
+    </script>
+</body>
+</html>

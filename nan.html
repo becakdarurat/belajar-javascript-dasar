@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number </title>
+</head>
+<body>
+    <script>
+       document.writeln(`<p>${parseInt("1salah")}</p>`); // Nan
+       document.writeln(`<p>${parseFloat("1.1text")}</p>`); // 1.1
+       
+    // Number() tidak akan mentolerir kesalahan pada data
+        document.writeln(`<p>${Number("1.1ups")}</p>`); // NaN
+        document.writeln(`<p>${Number("1.1x")}</p>`); // NaN
+        document.writeln(`<p>${Number("bukan number")}</p>`); // NaN
+
+        // Kode operasi NaN, nan akan tetap nan kalau di jumlahkan dengan NaN
+        const value1 = Number("salah"); // Nan
+        const value2 = 100;
+        const sum = value1 + value2; // NaN
+
+        document.writeln(`<p>${sum}</p>`);
+
+        document.writeln(`<p>${isNaN(value1)}</p>`);
+        document.writeln(`<p>${isNaN(100)}</p>`);
+        document.writeln(`<p>${isNaN(NaN)}</p>`);
+        </script>
+</body>
+</html>
