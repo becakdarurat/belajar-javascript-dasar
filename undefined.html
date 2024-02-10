@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined</title>
+</head>
+<body>
+    <script>
+
+        let name;
+
+        if(name === undefined){
+            alert("UNDEFINED");
+        } else {
+            alert("DEFINED");
+        }
+
+        const names = ["Eko", "Kurniawan"];
+        if(names[2] === undefined){
+            console.info("Array Undefined");
+        } else {
+            console.info("Array Defined");
+        }
+
+
+        // Kode undefined Object Property
+        const person = {};
+
+        if(person.name === undefined){
+            alert("Hello World!");
+        } else {
+            alert(`Hello ${person.name}`);
+        }
+
+    </script>    
+</body>
+</html>
