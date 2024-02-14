@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In di Object</title>
+</head>
+<body>
+    <script>
+
+    // for untuk mengiterasi elemen array
+    // for in untuk mengiterasi property object, nama property nya bukan nilai property
+        const person = {
+            firstName: "Sofyan",
+            middleName: "Pian",
+            lastName: "Tanjung",
+        };
+
+        for (const property in person){
+            document.writeln(`<p>Property ${property} : ${person[property]}</p>`);
+        }
+
+    // for in juga bisa di array, sekali lagi kalau for in di array yang di iterasi adalah indexnya
+        const names = ["Eko","Kurniawan","Khannedy"];
+        for(const index in names){
+            document.writeln(`<p>${index}</p>`);
+        }
+    </script>
+</body>
+</html>

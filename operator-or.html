@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Or</title>
+</head>
+<body>
+    <script>
+    // Operator ini akan mengcek berdasarkan thruty dan falsey, yaitu operator non boolean
+
+            // Dia akan mengambil nilai thruty yang pertama
+        // thruty dan falsey
+        console.info("Hello" || ''); // hello
+        // falsey dan falsey
+        console.info("" || []); // []
+        //  thruty dan thruty
+        console.info("0" || "NOL"); // 0
+        //  falsey dan thruty
+        console.info(0 || "NULL"); // NULL
+        //  falsey dan thruty
+        console.info(null || "NULL"); // NULL
+        //  falsey dan thruty
+        console.info(undefined || "UNDEFINED"); // UNDEFINED
+
+
+        // di object juga bisa kita menggunakan operator OR
+
+        const person = {
+            firstName : "",
+            lastName : "Tanjung",
+        }
+        const name = person.firstName || person.lastName;
+        console.info(name);
+
+
+        // kebalikan dari operator thruty, dia akan mengambil yang paling pertama falsey
+        console.info("hello" && ''); // ''
+        console.info("" && []); // ""
+        console.info("0" && "NOL"); // "NOL"
+        console.info(0 && "NOL"); // 0
+        console.info(null && "NULL"); // null
+        console.info(undefined && "UNDEFINED"); // undefined
+        console.info("undefined" && "null"); // null
+
+    </script>
+</body>
+</html>

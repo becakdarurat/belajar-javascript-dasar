@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label dengan Continue dan Break</title>
+</head>
+<body>
+    <script>
+
+        loopi:
+            for (let i = 0; i < 100; i++){
+                loopj:
+                for (let j = 0; j < 100; j++){
+                    if (j > 5){
+                        continue loopi;
+                    }
+                    document.writeln(`<p>${i}-${j}</p>`);
+                }
+            }
+
+    </script>
+</body>
+</html>

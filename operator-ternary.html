@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Ternary</title>
+</head>
+<body>
+    <script>
+
+// Tanpa Ternary Operator
+        const nilai = 75;
+        let ucapan;
+
+        if(nilai >= 75){
+            ucapan = "Selamat anda lulus";
+        } else {
+            ucapan = "Silahkan coba lagi";
+        }
+
+        document.writeln(`<p>${ucapan}</p>`);
+
+
+// Dengan Ternary Operator
+        const nilaii = 60;
+        let perkataan = nilaii >= 75 ? "Selamat anda lulus" : "Silahkan coba lagi";
+    
+    document.writeln(`<p>${perkataan}</p>`);
+    </script>
+</body>
+</html>

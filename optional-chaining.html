@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <script>
+        
+        const person = {
+            address: {
+                country : "Kota Sibolga",
+                language: "Indonesia",
+            }
+        };
+
+        // const country = person.address.country;
+        // document.writeln(`<p>${country}</p>`);
+        
+        
+        // Kode : Pengecekan Menggunakan if 
+    let say;
+    if(person.address !== undefined && person.address !== null){
+        say = person.address.country;
+    }
+
+    alert(say);
+
+    // Koden menggunakan Optional Chaining
+    let Person = {};
+    // mengcek ada atau tidak datanya, dia tidak akan error kalau misalkan tidak ada datanya
+    alert(person?.address.country);
+
+    // NB: kita menggunakan optional chaining, ketika mengakses di dalam object, karena jika tidak pakai itu, dan ternyata tidak ada datanya maka akan terjadi error dan programm dibawah tidak di eksekusi
+
+    </script>
+</body>
+</html>

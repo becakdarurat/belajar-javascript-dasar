@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in Operator</title>
+</head>
+<body>
+    <script>
+
+        // in operator hanya mengcek indexnya, dan tidak terlalu peduli masalah ada atau tidaknya
+
+        const person = {
+            firstName: "Sofyan",
+            lastName: "Tanjung"
+        }
+
+        const result = "firstName" in person; // true
+        document.writeln(`<p>${result}</p>`);
+
+    </script>
+</body>
+</html>
