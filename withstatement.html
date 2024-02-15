@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+<body>
+    <script>
+
+        // mengakses propery tanpa withstatement
+        const person = {
+            firstName : "Eko",
+            middleName : "Kurniawan",
+            lastName : "Khannedy",
+        }
+
+        console.log(person.firstName);
+        console.log(person.middleName);
+        console.log(person.lastName);
+
+        // dengan with statemnet
+        const PersonCapres = {
+            noPertama : "anis",
+            noKedua : "Prabowo",
+            noKetiga : "Ganjar",
+        }
+
+        // lebih singkat
+        with(PersonCapres){
+            console.log(noPertama);
+            console.log(noKedua);
+            console.log(noKetiga);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of Array</title>
+</head>
+<body>
+    <script>
+
+        // for of hanya bisa mengiterasi selain object, yang di iterasi adalah nilainya, beda dengan for in yang di iterasi index nya
+        const names = ["Eko", "Kurniawan", "Khannedy"];
+
+        for (const name of names){
+            document.writeln(`<p>Daftar Nama : ${name}</p>`);
+        }
+
+        // string juga bisa
+        const fullName = "Eko Kurniawan Khannedy";
+
+        for (const character of fullName){
+            document.writeln(`<p>Kharakter name : ${character}</p>`);
+        }
+    </script>
+</body>
+</html>
