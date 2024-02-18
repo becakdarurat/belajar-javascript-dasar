@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Anonymous</title>
+</head>
+<body>
+    <script>
+        let say = function (name){ 
+            console.info(`Hello ${name}`);
+         };
+         say("Sofyan");
+
+        //  Kode : Anonymous Function di parameter
+        function giveMeName(callback){
+            callback("Sibolga Kota Ikan");
+        }
+
+        giveMeName(function (name){
+            console.info(`Hello ${name}`)
+        });
+        giveMeName(function (name){
+            console.info(`Hello ${name}`)
+        });
+        giveMeName(function (name){
+            console.info(`Hello ${name}`)
+        });
+    </script>
+</body>
+</html>

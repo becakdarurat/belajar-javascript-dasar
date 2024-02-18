@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Scope</title>
+</head>
+<body>
+    <script>
+        function first(){
+            // local scope
+            let firstVariable = "First";
+        }
+        function second(){
+            // local scope
+            let secondVariable = "Second";
+        }
+
+        first();
+        second();
+
+        // console.info(firstVariable); // can not access local scope
+        // console.info(first); // can not access local scope
+
+
+        // Kode : Nested Function Scope
+    function First(){
+        let FirstVariable = "Pertama";
+        function Second(){
+            console.info(FirstVariable);
+        }
+
+        Second();
+    }
+
+    First();
+    </script>
+</body>
+</html>
