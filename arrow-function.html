@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        const sayHello = (name) => {
+            const say = `Hello ${name}`;
+            console.info(say);
+        }
+
+        sayHello("Sofyan Tanjung");
+
+
+    // Kode : Arrow Function Tanpa block
+        // const SayHello = (name) => console.info(`Hello ${name}`);
+        // const SayHello = () => console.info(`Hello`);
+        const SayHello = name => console.info(`Hello ${name}`);
+        SayHello("Eko Kurniawan Khannedy");
+
+    // Kode : Arrow Function Return Value
+        const sum = (first, second) => first + second;
+
+        console.info(sum(100,100));
+
+
+        // Arrow function sebagai parameter
+        function giveMeName(callback){
+            callback("Kota Sibolga");
+        }
+
+        giveMeName((name) => console.info(`Hello ${name}`));
+    </script>
+</body>
+</html>

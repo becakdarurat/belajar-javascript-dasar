@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        // Kode : Closure
+        function createAdder(value){
+            const owner = "Sofyan Tanjung";
+            function add(param){
+                console.info(owner);
+                return value + param;
+            }
+            return add;
+        }
+        // Kita mengeluarkan function nya dengan variable nya keluar
+
+        const addTwo = createAdder(2);
+        console.info(addTwo(10)); // output : 12
+        console.info(addTwo(20)); // output : 22 
+        // karenea param nya di ambil dari addTwo, dan value di ambil dari createAdder
+    </script>
+</body>
+</html>

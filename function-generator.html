@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator</title>
+</head>
+<body>
+    <script>
+    // Fungsi generator di Javascript memungkinkan Anda membuat fungsi yang dapat menghasilkan urutan nilai secara berulang. Mirip seperti iterator, tetapi dengan beberapa perbedaan.
+        function* createNames(){
+            yield "Eko";
+            yield "Kurniawan";
+            yield "Khannedy";
+        }
+
+        const names = createNames();
+        for (const name of names){
+            console.log(name);
+        }
+
+
+    // Kode : Function Generator Kompleks, sifatnya lazy, sedangkan function biasa itu eager, dibuat dulu datanya, baru
+
+    // lazy
+        function* buatGanjil(value){
+            for (let i = 1; i <= value; i++){
+                if (i % 2 === 1){
+                    yield 1;
+                }
+            }
+        }
+
+    // lazy
+        function* buatGanjilArray(value){
+            const result = [];
+            for (let i = 1; i <= value; i++){
+                if (i % 2 === 1){
+                    console.info(`Yield ${i}`);
+                    result.push(i);
+                }
+            }
+        }
+
+        const angkaGanjil = buatGanjil(100);
+        for (const angka of angkaGanjil){
+            console.info(angka);
+        }
+    </script>
+</body>
+</html>

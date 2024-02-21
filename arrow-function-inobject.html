@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function didalam Object</title>
+</head>
+<body>
+    <script>
+        const namaKota = "Sibolga";
+        const  person = {
+            name : "Sofyan Tanjung",
+            sayHello : (name) => {
+                console.info(this); // window
+                console.info(`Hello ${name}, Kota kamu ${this.namaKota}`) 
+            },
+        }
+
+        person.sayHello("pian");
+    </script>
+</body>
+</html>
