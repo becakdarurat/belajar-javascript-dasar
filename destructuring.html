@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desctructuring</title>
+</head>
+<body>
+    <script>
+
+        const names = ["Eko", "Kurniawan", "Khannedy"];
+        const firstName = names[0];
+        const middleName = names[1];
+        const lastName = names[2];
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+
+
+        // Kode : Destructuring array , adalah cara untuk mengabil nilai array nya secara sederhana
+        const name = ["Joko", "Budi", "Eko", "Sibolga"];
+
+        const [firstname, middlename, lastname, ...others] = names;
+        console.info(firstname);
+        console.info(middlename);
+        console.info(lastname);
+        console.info(others);
+
+
+        // Kode : Mengambil Data di Object
+        const person = {
+            pertama : "Sofyan",
+            kedua : "Tanjung",
+            ketiga : {
+                street : "Jalan belum ada",
+                city : "Sibolga",
+                country : "Indonesia"
+            },
+            hobby : "Coding",
+            channelBelajar : "Programmer Zaman Now"
+        };
+
+        // secara manual tanpa destructuring
+        const FirstName = person.pertama;
+        const LastName = person.kedua;
+
+
+        // Kode : dengan Destructuring 
+        const {pertama, kedua, ketiga, ...Others} = person;
+        // const {pertama, kedua, ketiga : {street, city, country}, ...Others} = person; nested Object
+        console.info(pertama);
+        console.info(kedua);
+        console.info(ketiga);
+        console.info(others);
+
+    </script>
+</body>
+</html>

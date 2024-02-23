@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+
+        // kita bungkus ke dalam variable
+        const person = {
+            firstName : "Sofyan",
+            lastName : "Tanjung",
+        }
+        const {
+            firstName : namaDepan,
+            middleName : namaTengah = "Tanjung",
+            lastName : namaBelakang} = person;
+
+            console.info(namaDepan);
+            console.info(namaTengah);
+            console.info(namaBelakang);
+    </script>
+</body>
+</html>
